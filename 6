@@ -1,0 +1,17 @@
+import random
+
+secret = random.randint(1,20)
+trues = 0
+
+while trues < 3:
+    guess = int(input("отгадай число от 1 до 20: "))
+    trues = trues + 1
+
+    if guess == secret:
+        print("победа")
+    elif guess < secret:
+        print("загаданое число больше")
+    else:
+        print("загаданое число меньше")
+
+print("ты не отгадал число загадоное чилсо было",secret)
